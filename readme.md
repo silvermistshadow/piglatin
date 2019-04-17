@@ -12,9 +12,12 @@ Specs:
   The program does nothing to non-alphabetical characters, since they do not contain consonants or vowels.
     Example Input: 3
     Example Output: 3
-  The program adds "ay" to single-letter words beginning with a vowel.
+  The program adds "way" to words beginning with a vowel.
     Example Input: i
-    Example Output: iay
+    Example Output: iway
+  For words beginning with one or more consonants, move all of the first consecutive consonants to the end, and add "ay".
+    example input: they
+    example output: eythay
   Words beginning with y have y treated as a consonant.
     Example input: y
     example output: yay
