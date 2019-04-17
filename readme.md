@@ -1,6 +1,6 @@
 # _{Application Name}_
 
-#### _{Brief description of application}, {Date of current version}_
+#### _Pig latin translator, 4-17-2019_
 
 #### By _**{List of contributors}**_
 
@@ -49,6 +49,4 @@ _{Tell me about the languages and tools you used to create this app. Assume that
 
 ### License
 
-*{Determine the license under which this application can be used.  See below for more details on licensing.}*
-
-Copyright (c) 2016 **_{List of contributors or company name}_**
+*MIT*
