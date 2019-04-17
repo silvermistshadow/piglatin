@@ -8,6 +8,20 @@
 
 _{This is a detailed description of your application. Its purpose and usage.  Give as much detail as needed to explain what the application does, and any other information you want users or other developers to have. }_
 
+Specs:
+  The program does nothing to non-alphabetical characters, since they do not contain consonants or vowels.
+    Example Input: 3
+    Example Output: 3
+  The program adds "ay" to single-letter words beginning with a vowel.
+    Example Input: i
+    Example Output: iay
+  Words beginning with y have y treated as a consonant.
+    Example input: y
+    example output: yay
+  If the first consonants include "qu", move the "u" along with the "q". Don't forget about words like "squeal" where "qu" doesn't come first!
+    Example input: squeal
+    example output: ealsquay
+
 ## Setup/Installation Requirements
 
 * _This is a great place_
