@@ -3,9 +3,11 @@ var consonants = ['b', 'c', 'd', 'f', 'g', 'h', 'j', 'k', 'l', 'm', 'n', 'p', 'q
 var vowels = ['a', 'i', 'u', 'e', 'o']
 var toPigLatin = function(inputText){
   if (inputText.startsWith('a' || 'i' || 'u' || 'e' || 'o')) {
-    var newWord = inputText + "way"
+    var newWord = inputText + "way";
   }
-
+  else if (inputText.startsWith(consonants)) {
+    var newWord = inputText + "ay";
+  }
 };
 
 
