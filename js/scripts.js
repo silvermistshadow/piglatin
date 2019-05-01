@@ -1,24 +1,21 @@
 //Back end logic here
-var consonants = ['b', 'c', 'd', 'f', 'g', 'h', 'j', 'k', 'l', 'm', 'n', 'p', 'q', 'r', 's', 't', 'v', 'w', 'z']
-var vowels = ['a', 'i', 'u', 'e', 'o']
+const digits = ['0', '1', '2', '3', '4', '5', '6', '7', '8','9']
+const vowels = ['a', 'i', 'u', 'e', 'o']
 var newWord;
+var conContainer = [];
+var vowelContainer = [];
 var toPigLatin = function(inputText){
   inputText = inputText.toLowerCase();
-  vowels.forEach(function(vowel){
-    if (inputText.startsWith(vowel)) {
-      newWord = inputText + 'way';
-      console.log(newWord);
-    }
-  });
-  consonants.forEach(function(consonant){
-    if (inputText.startsWith(consonant)) {
-        newWord = inputText + 'ay';
-        console.log(newWord);
-    }
-  });
-  if ((newWord.endsWith === 'ay') && (newWord.endsWith != 'way')){
-
-  }
+  for (x=0; x < inputText.length; x++) {
+    for (i=0; i<vowels.length; i++) {
+      if (inputText.startsWith(vowel)) {
+        newWord = inputText + 'way'
+      }
+      else {
+        newWord = inputText + 'ay'
+      }
+    };
+  };
 };
 
 
