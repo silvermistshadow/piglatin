@@ -37,7 +37,7 @@ _{Leave nothing to chance! You want it to be easy for potential users, employers
 
 ## Known Bugs
 
-_Using the same consonant twice in a row at the start of a word will cause a loop. I'm looking into it._
+_None at the moment._
 
 ## Support and contact details
 

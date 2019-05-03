@@ -19,8 +19,8 @@ var toPigLatin = function(inputText){
           foundIt = newWord.slice(x);
           swapArray = newWord.slice(0, x);
           finalWord = foundIt.join("")+swapArray.join("")+"ay";
-          x = vowels.length;
-          i = newWord.length;
+          i = vowels.length;
+          x = newWord.length;
           console.log(finalWord);
         }
       }
