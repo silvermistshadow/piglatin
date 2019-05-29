@@ -1,8 +1,6 @@
 //Back end logic here
 const digits = ['0', '1', '2', '3', '4', '5', '6', '7', '8','9']
 const vowels = ['a', 'i', 'u', 'e', 'o']
-const consonants = ['b', 'c', 'd', 'f', 'g', 'h', 'j', 'k', 'l', 'm', 'n', 'p', 'q', 'r', 's', 't', 'v', 'w', 'z']
-const squeal = ['q' 'u'];
 var swapArray = [];
 var finalWord = [];
 var foundIt =[];
@@ -14,16 +12,24 @@ var toPigLatin = function(inputText){
       if (newWord[x] === vowels[i]){
         if (x===0){
           finalWord = newWord.join('')+'way';
-          console.log(finalWord)
+          i = vowels.length;
+          x = newWord.length; //if we've already done a word, there's no need to keep going
         }
+
         else {
           foundIt = newWord.slice(x);
           swapArray = newWord.slice(0, x);
           finalWord = foundIt.join("")+swapArray.join("")+"ay";
           i = vowels.length;
           x = newWord.length;
-          console.log(finalWord);
         }
+      }
+      else if ((newWord[x]==='q')&&(newWord[x+1]==='u')) {
+        foundIt = newWord.slice(x+2);
+        swapArray = newWord.slice(0, x+2);
+        finalWord = foundIt.join("")+swapArray.join("")+"ay";
+        i = vowels.length;
+        x = newWord.length;
       }
       else {
         swapArray.push(newWord[i]);
